@@ -51,6 +51,7 @@ function aprobados() {
 
 //Se ordena por notas
 function porNota() {
+	resultado = "";
 	for (let i = 0; i < BDD.length - 1; i++) {
 		for (let j = 0; j < BDD.length - 1 - i; j++) {
 			if (BDD[j][1] > BDD[j + 1][1]) {
@@ -79,6 +80,7 @@ function porNota() {
 
 //Se ordena por nombre
 function porNombre() {
+	resultado = "";
 	for (let i = 0; i < BDD.length - 1; i++) {
 		for (let j = 0; j < BDD.length - 1 - i; j++) {
 			if (BDD[j][0] > BDD[j + 1][0]) {
